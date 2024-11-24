@@ -1,0 +1,126 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    Benimuyg(), //Benimuyg ile ilgili farklı özelllikler vb şeyler alt tarafta da vardır
+  );
+}
+
+class Benimuyg extends StatelessWidget {
+  const Benimuyg({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      backgroundColor: Colors.lime,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              //içerisine atılan resmi çerveçe olarak yuvarlak şekildiei göstermeye yaramaktadır
+
+              CircleAvatar(
+                radius: 70, //dairenin genişliği
+                backgroundColor: Colors.lime,
+                backgroundImage: AssetImage("Image/yildirm.jpg"),
+              ),
+              Text(
+                "Yıldırım Yazılım",
+                style: TextStyle(
+                  fontSize: 45,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                "Bir tuş uzağınızda ",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+
+              Container(
+                //color: Colors.white,
+                margin: EdgeInsets.symmetric(horizontal: 45),
+                padding: EdgeInsets.all(4.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape
+                        .rectangle, //şeklini belirlemek için kulllanılan özellik
+                    color: Colors
+                        .white, //dışarıda belirtilen renk içerisinde belirtildi
+
+                    borderRadius: BorderRadiusDirectional.circular(16.0)
+                    //kare şeklinin sadece köşelerini bu şekilde yuvarlak yapmış olduk
+
+                    ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //iconlar uygulama çalışırken o an çizilmektedir
+                    Icon(
+                      Icons.email,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "ykerem379@gmail.com",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                //color: Colors.white,
+                margin: EdgeInsets.symmetric(horizontal: 45),
+                padding: EdgeInsets.all(7.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape
+                        .rectangle, //şeklini belirlemek için kulllanılan özellik
+                    color: Colors
+                        .white, //dışarıda belirtilen renk içerisinde belirtildi
+
+                    borderRadius: BorderRadiusDirectional.circular(16.0)
+                    //kare şeklinin sadece köşelerini bu şekilde yuvarlak yapmış olduk
+
+                    ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //iconlar uygulama çalışırken o an çizilmektedir
+                    Icon(
+                      Icons.call,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "+90 5442205365",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ));
+  }
+}
