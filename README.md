@@ -1,7 +1,8 @@
 # yildirim_software_iletisim_sayfasi
 
 iletişim bilgilerinin yer aldığı bir app
-![yıldırım](https://github.com/user-attachments/assets/d8ca6690-e5aa-4c4e-ba4e-5eff86390214)
+![1](https://github.com/user-attachments/assets/b3178361-8ecf-43d6-8474-4a4a6900d9d3)
+
 
 ## Getting Started
 
